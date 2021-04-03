@@ -8,8 +8,18 @@ class Config():
     主机的地址和端口号
     Host and port of your server
     '''
-    HOST = '192.168.1.105'
+    HOST = '192.168.1.101'
     PORT = '80'
+    '''
+    --------------------
+    '''
+
+    '''
+    --------------------
+    愚人节模式开关
+    Switch of April Fool's Day
+    '''
+    IS_APRILFOOLS = True
     '''
     --------------------
     '''
@@ -72,6 +82,16 @@ class Config():
     If recording detailed server logs is enabled
     '''
     ALLOW_LOG_INFO = False
+    '''
+    --------------------
+    '''
+
+    '''
+    --------------------
+    用户注册时的默认记忆源点数量
+    The default amount of memories at the time of user registration
+    '''
+    DEFAULT_MEMORIES = 0
     '''
     --------------------
     '''

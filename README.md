@@ -39,7 +39,6 @@ This procedure is mainly used for study and research, and shall not be used for 
 - 服务器日志 Server log
 
 没有以下 We don't have：
-- 角色数值 Character characteristic value
 - 服务器安全性保证 Server security assurance
 
 可能有问题 There may be problems：
@@ -64,14 +63,9 @@ It is just so interesting. What it can do is under exploration.
 >
 > Tips: When updating, please keep the original database in case of data loss.
 
-### Version 2.3
-- 适用于Arcaea 3.5.2版本 For Arcaea 3.5.2
-- 更新了歌曲数据库 Update the song database.
-- 新搭档**迷尔**已解锁 Unlock the new character **Mir**.
-- 新增服务器日志 Add server log.
-- 优化了代码结构 Optimize the code structure.
-- 修复了一些Bug，提升服务器安全性 Fix some bugs and improve server security.
-
+### Version 2.3.1
+- 适用于Arcaea 3.5.3版本 For Arcaea 3.5.3
+- 修复了一些Bug Fix some bugs.
 
 ## 运行环境与依赖 Running environment and requirements
 - Windows/Linux/Mac OS/Android
@@ -79,6 +73,7 @@ It is just so interesting. What it can do is under exploration.
 - Flask module
 - Charles (optional)
 
+<!--
 ## 环境搭建 Environment construction
 [中文](https://github.com/Lost-MSth/Arcaea-server/wiki/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA)  
 [English](https://github.com/Lost-MSth/Arcaea-server/wiki/Environment-construction)
@@ -90,6 +85,7 @@ It is just so interesting. What it can do is under exploration.
 ## 注意 Attentions
 [中文](https://github.com/Lost-MSth/Arcaea-server/wiki/%E6%B3%A8%E6%84%8F)  
 [English](https://github.com/Lost-MSth/Arcaea-server/wiki/Attentions)
+-->
 
 ## 鸣谢 Thanks
 歌曲数据库来自 Using song database from
