@@ -13,6 +13,7 @@ import web.index
 import server.arcworld
 import server.arcdownload
 import server.arcpurchase
+import server.init
 import os
 import sys
 
@@ -570,6 +571,11 @@ def main():
 
     dictConfig(log_dict)
 
+    if not server.init.check_before_run(app):
+        app.logger.error('Something wrong. The server will not run.')
+        input('Press ENTER key to exit.')
+        sys.exit()
+
     app.logger.info("Start to initialize data in 'songfile' table...")
     try:
         error = server.arcdownload.initialize_songfile()
@@ -580,7 +586,11 @@ def main():
     else:
         app.logger.info('Complete!')
 
-    app.run(Config.HOST, Config.PORT)
+    if Config.SSL_CERT and Config.SSL_KEY:
+        app.run(Config.HOST, Config.PORT, ssl_context=(
+            Config.SSL_CERT, Config.SSL_KEY))
+    else:
+        app.run(Config.HOST, Config.PORT)
 
 
 if __name__ == '__main__':

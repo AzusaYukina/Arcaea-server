@@ -16,6 +16,19 @@ class Config():
 
     '''
     --------------------
+    SSL证书路径
+    留空则使用HTTP
+    SSL certificate path
+    If left blank, use HTTP.
+    '''
+    SSL_CERT = ''  # *.pem
+    SSL_KEY = ''  # *.key
+    '''
+    --------------------
+    '''
+
+    '''
+    --------------------
     愚人节模式开关
     Switch of April Fool's Day
     '''
@@ -42,6 +55,17 @@ class Config():
     If you don't know what it is, please don't modify it.
     '''
     SECRET_KEY = '1145141919810'
+    '''
+    --------------------
+    '''
+
+    '''
+    --------------------
+    歌曲下载地址前缀，留空则自动获取
+    Song download address prefix
+    If left blank, it will be obtained automatically.
+    '''
+    DOWNLOAD_LINK_PREFIX = ''  # http://***.com/download/
     '''
     --------------------
     '''
@@ -92,6 +116,16 @@ class Config():
     The default amount of memories at the time of user registration
     '''
     DEFAULT_MEMORIES = 0
+    '''
+    --------------------
+    '''
+
+    '''
+    --------------------
+    是否强制使用全解锁云端存档
+    If forcing full unlocked cloud save is enabled
+    '''
+    SAVE_FULL_UNLOCK = False
     '''
     --------------------
     '''
